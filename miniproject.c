@@ -4,7 +4,7 @@ int main (){
     
 char titre[100][10] ; 
 char auteur[100][10]  ;
-float prix[100] ;
+float prix[100] ; 
 int quantite[100] ;
 int i ,choix,n=0;
 char titreT[25] ;
@@ -13,12 +13,13 @@ int x=-1;
 
 do {
         printf("Entrer le nombre du votre choix\n");
-        printf("1. Ajouter un livre\n");
-        printf("2. Afficher tous les livres\n");
-        printf("3. Rechercher un livre par titre\n");
-        printf("4. Mettre à jour la quantité d'un livre\n");
-        printf("5. Supprimer un livre\n");
-        printf("6. Afficher le nombre total de livres\n");
+        printf("1- Ajouter un livre\n");
+        printf("2- Afficher tous les livres\n");
+        printf("3- Rechercher un livre par titre\n");
+        printf("4- Mettre à jour la quantité d'un livre\n");
+        printf("5- Supprimer un livre\n");
+        printf("6- Afficher le nombre total de livres\n");
+        printf("7- Taper pour quitueé !");
         printf("Choix :  ");
         scanf("%d", &choix);
        
@@ -121,7 +122,7 @@ do {
         break;
        }
 
-    } while (choix !=0);
+    } while (choix !=7);
 
     return 0 ;
 }
